@@ -1,5 +1,32 @@
 # NEXUS VM Studio
 
+## Created with AI-assisted coding
+
+**Developed by Rich Dunbar through an iterative build–measure–learn process.**
+
+I developed NEXUS VM Studio using **AI-assisted coding** to support development of the **Nexus OS custom kernel and graphical user interface**. I directed the project and used AI to help implement, debug and refine the launcher, interface and supporting automation.
+
+### Why I built it
+
+Preparing a live boot and restarting physical hardware for every revision made GUI development a slower process. I wanted a more convenient way to run Nexus OS, inspect its behavior and test interface changes between live-boot sessions.
+
+NEXUS VM Studio was created to shorten that feedback loop: **launch the guest, inspect the result, identify the problem, revise the code and test again**. Its purpose is to make kernel-startup and GUI debugging faster and more repeatable during development.
+
+### Build → Measure → Learn
+
+| Stage | Development workflow |
+| --- | --- |
+| **Build** | Implement a launcher improvement or prepare a revised Nexus OS guest image. |
+| **Measure** | Inspect the guest display, startup behavior, serial output and diagnostic logs. |
+| **Learn** | Use observed failures and feedback to identify the next change. |
+| **Repeat** | Refine the implementation and run another controlled test. |
+
+AI-assisted coding supports this iterative process; human review and testing remain necessary.
+
+My project work is the **NEXUS control interface and automation**. **QEMU provides the emulator**, and **TianoCore EDK II / OVMF provides UEFI firmware**. VM testing supports a faster development workflow, while physical-device compatibility and performance still require testing on real hardware.
+
+---
+
 **Windows-based virtual machine testing and diagnostics for NEXUS OS**  
 **Project:** NEXUS Emerging Technology  
 **Application:** NEXUS VM Studio v9 · W1.1R3 / VMBOOT1 integration  
@@ -12,6 +39,8 @@ NEXUS VM Studio is a local **HTML + PowerShell control interface for the open-so
 
 ## Contents
 
+- [Created with AI-assisted coding](#created-with-ai-assisted-coding)
+- [Why I built it](#why-i-built-it)
 - [Features](#features)
 - [System requirements](#system-requirements)
 - [Quick start](#quick-start)
