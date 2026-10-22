@@ -1,5 +1,9 @@
 # Nexus VM Studio
 
+## Current release licensing
+
+This Nexus release is not offered under Apache License 2.0. Nexus-owned software may be used only for personal, non-commercial purposes. Any other use, including commercial use, modification or redistribution, requires express written consent from the rights holder. Third-party code, models, datasets and separately licensed components retain their own licenses and notices. Previously granted rights and rights that cannot lawfully be restricted remain unchanged.
+
 **Next-release documentation staging · not a published application update**
 
 A local HTML and PowerShell control interface for QEMU, not a new hypervisor.

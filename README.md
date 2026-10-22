@@ -5,9 +5,9 @@
 This Nexus release is not offered under Apache License 2.0. Nexus-owned software may be used only for personal, non-commercial purposes. Any other use, including commercial use, modification or redistribution, requires express written consent from the rights holder. Third-party code, models, datasets and separately licensed components retain their own licenses and notices. Previously granted rights and rights that cannot lawfully be restricted remain unchanged.
 
 
-> Packaging refresh pending: existing staged data will be replaced by the newly reviewed licensing-corrected package before merge. Draft release staging: the v9-W1.1R4 installer and data components are included below. Windows/hardware acceptance and merge review remain pending; this is not a published release.
+> Draft release staging: the v9-W1.1R4 installer and data components are included below. Windows/hardware acceptance and merge review remain pending; this is not a published release.
 
-**Next-release documentation staging · not a published application update**
+**Next-release package staging · not a published application update**
 
 A local HTML and PowerShell control interface for QEMU, not a new hypervisor.
 
@@ -29,4 +29,4 @@ Developed by Rich Dunbar / Nexus Emerging Technology with AI-assisted coding. Re
 
 [Installation instructions](releases/v9-W1.1R4/INSTALL.txt) · [Python installer](releases/v9-W1.1R4/installer.py) · [Package directory](releases/v9-W1.1R4) · [Validation record](releases/v9-W1.1R4/RELEASE_VALIDATION.json).
 
-Download the entire version directory together, not the installer alone. Keep its manifest and data file alongside installer.py. Every distributed component is below 20,000,000 bytes. No new live release or hardware certification is implied.
+Download the entire version directory together, not the installer alone. Keep its manifest and data file alongside installer.py. Every distributed component is at most 10,000,000 bytes. The complete licensing-corrected package has passed independent package review and isolated no-launch extraction; Windows/hardware acceptance remains pending. No new live release or hardware certification is implied.

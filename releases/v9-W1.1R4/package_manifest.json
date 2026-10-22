@@ -5,12 +5,12 @@
   "version": "v9-W1.1R4",
   "entrypoint": "NEXUS-VM-Lab.cmd",
   "launch_kind": "windows",
-  "payload_sha256": "9dd0d239b9f03277e0be506580c4e4c10ad8777f08e6b4372fec37f7e4ab3a50",
+  "payload_sha256": "19629bbeb19652ff6cc65e43e05a0ece008ae07f0ad403f567420c6d6e6186d8",
   "parts": [
     {
       "name": "Nexus_vm_Data_001.nxd",
-      "bytes": 89546,
-      "sha256": "9dd0d239b9f03277e0be506580c4e4c10ad8777f08e6b4372fec37f7e4ab3a50"
+      "bytes": 93353,
+      "sha256": "19629bbeb19652ff6cc65e43e05a0ece008ae07f0ad403f567420c6d6e6186d8"
     }
   ],
   "files": {
@@ -38,6 +38,10 @@
       "bytes": 551,
       "sha256": "e9b3f2bb81028ac96bca0015f7b0c57cc1624e95c475b9855b3c7222debba50a"
     },
+    "LICENSE": {
+      "bytes": 1976,
+      "sha256": "210fd883eae59321c3760e1dad92120e9d3cd90bb22f048a2698f6be3dfcae8f"
+    },
     "NEXUS-VM-Bridge.ps1": {
       "bytes": 25864,
       "sha256": "3ab8b963ce8af726860628b0149958116960279e44914fe3baa24239b7e047ea"
@@ -47,8 +51,8 @@
       "sha256": "e8aed98d002cdff1d2eb1b08e3aff4e44919e7b20d3f788c5828e9f8dfa52e88"
     },
     "NEXUS-VM-Lab.html": {
-      "bytes": 40513,
-      "sha256": "78fadc8954e821179d4c16b28de58c9669ca1c3c5e56ca58d48fca8574eff8d4"
+      "bytes": 40840,
+      "sha256": "f410141b72cc1cc6e7a5f45e5c650b84f5527b2088e9e90f4452846fc7203b99"
     },
     "NEXUS-VM-Lab.ps1": {
       "bytes": 14767,
@@ -62,29 +66,33 @@
       "bytes": 4379,
       "sha256": "eb20deafe5afd74bcd0dee5a4404c41b76053286e1873652cf3667d335d41ede"
     },
+    "NEXUS_LICENSE_SCOPE.md": {
+      "bytes": 1615,
+      "sha256": "7a12f890aea5c22c88ae66d986b01e789a20ff7aad9cf6580958c007ff1b3eae"
+    },
     "OPEN-LEGACY-POWERSHELL-GUI.cmd": {
       "bytes": 126,
       "sha256": "0a682d70ccf7f3c22db86820c366ed5ff46359c07a9ce19becef4394cbefe71c"
     },
     "PRODUCT_RELEASE.json": {
-      "bytes": 411,
-      "sha256": "3c0d3dab8a8a30492cb98f7b9d5f35e6c3a52b1cb5cc1f9fd980eb1f6ae70f76"
+      "bytes": 629,
+      "sha256": "7505664ae68639df397449d3c299557aab3c59ddc4449980183826450c35342f"
     },
     "Preflight-NEXUS-VM.ps1": {
       "bytes": 6073,
       "sha256": "87e0715e7734f24242452e60664610f6cf940d636539ae86721510491c976eda"
     },
     "README.md": {
-      "bytes": 14393,
-      "sha256": "f8d673938da500222c66d26d01fef17298ae02de5c0116627b2978b0f81f3dae"
+      "bytes": 14890,
+      "sha256": "f3a8f20e40de3a8bc743875ba2331f2041ec9adb25ffccbb5426a29744fa3612"
     },
     "RELEASE_SOURCE_SHA256.json": {
-      "bytes": 4698,
-      "sha256": "ca73876afb1c5f38b910d33a04c53ca6f30a0e3b1a6fb403d5b100997fa58977"
+      "bytes": 4993,
+      "sha256": "5a0f3ff955d6e59519b3a1d350ed9dbf3246adf23cbc01ec984a0df3eac3533d"
     },
     "RELEASE_VALIDATION.json": {
-      "bytes": 631,
-      "sha256": "33673c6fbdb0ce7270091a855b7fa7c3124bfff08f80074b9f973f493f2425b9"
+      "bytes": 1057,
+      "sha256": "be26983248273c839ee6198dfa23bfc90ebefa051246dd2ca4f7767b9b73a33b"
     },
     "RUN-DIAGNOSTICS.cmd": {
       "bytes": 200,
@@ -153,6 +161,10 @@
     "qualification/next_release/vm_http_retry.log": {
       "bytes": 779,
       "sha256": "80be2dc906fd12102f0dd456c71ecf9e454919dc8d006a7863f0b6be8b4c8430"
+    },
+    "qualification/next_release/vm_license_ui.log": {
+      "bytes": 2093,
+      "sha256": "e108e549b46589078d5f010f19d33bde4edc5d3ffc18c46ba717e025c3616ab4"
     },
     "qualification/next_release/vm_more.log": {
       "bytes": 1704,
