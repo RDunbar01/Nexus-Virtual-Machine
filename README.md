@@ -1,6 +1,6 @@
 # Nexus VM Studio
 
-> Draft documentation staging: application packages and browser HTML are pending a later verified commit. Any proposed version or trial path below is not a shipped release or live trial. Do not merge until package and link checks pass.
+> Draft release staging: the v9-W1.1R4 installer and data components are included below. Windows/hardware acceptance and merge review remain pending; this is not a published release.
 
 **Next-release documentation staging · not a published application update**
 
@@ -19,3 +19,9 @@ Use the exact launch instructions accompanying the matching release package. The
 ## Evidence and licensing
 
 Developed by Rich Dunbar / Nexus Emerging Technology with AI-assisted coding. Retain existing licenses, attribution and third-party notices. No additional Windows, physical GPU, device-write or model-quality qualification is claimed by this documentation refresh. No live browser-trial deployment is created by this README.
+
+## Staged v9-W1.1R4 installation files
+
+[Installation instructions](releases/v9-W1.1R4/INSTALL.txt) · [Python installer](releases/v9-W1.1R4/installer.py) · [Package directory](releases/v9-W1.1R4) · [Validation record](releases/v9-W1.1R4/RELEASE_VALIDATION.json).
+
+Download the entire version directory together, not the installer alone. Keep its manifest and data file alongside installer.py. Every distributed component is below 20,000,000 bytes. No new live release or hardware certification is implied.

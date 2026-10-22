@@ -1,0 +1,12 @@
+PASS: 19 capture validation checks. No disk enumeration or capture executed.
+PASS: 7 launcher production-function mocked health checks. No processes launched.
+What if: Performing the operation "Move generated VM state into a recoverable reset backup" on target "/tmp/nexus-vm-reset-test-5b3e0fb19d924c8892cf90bcc88f713b/state/guest-work.qcow2".
+What if: Performing the operation "Move generated VM state into a recoverable reset backup" on target "/tmp/nexus-vm-reset-test-5b3e0fb19d924c8892cf90bcc88f713b/state/NEXUS_LAB_DISK_abcdef-123.qcow2".
+What if: Performing the operation "Move generated VM state into a recoverable reset backup" on target "/tmp/nexus-vm-reset-test-5b3e0fb19d924c8892cf90bcc88f713b/state/NEXUS_LAB_DISK.qcow2".
+What if: Performing the operation "Move generated VM state into a recoverable reset backup" on target "/tmp/nexus-vm-reset-test-5b3e0fb19d924c8892cf90bcc88f713b/state/NEXUS_UEFI_VARS_abcdef-123.fd".
+Archived guest-work.qcow2 to /tmp/nexus-vm-reset-test-5b3e0fb19d924c8892cf90bcc88f713b/state/reset-backups/20261022-091451-529-e598ecbf7b894586bb5cef9748e493a1
+Archived NEXUS_LAB_DISK_abcdef-123.qcow2 to /tmp/nexus-vm-reset-test-5b3e0fb19d924c8892cf90bcc88f713b/state/reset-backups/20261022-091451-555-3deaad4d37bc470babfa74d661d5553a
+Archived NEXUS_LAB_DISK.qcow2 to /tmp/nexus-vm-reset-test-5b3e0fb19d924c8892cf90bcc88f713b/state/reset-backups/20261022-091451-555-3deaad4d37bc470babfa74d661d5553a
+Archived NEXUS_UEFI_VARS_abcdef-123.fd to /tmp/nexus-vm-reset-test-5b3e0fb19d924c8892cf90bcc88f713b/state/reset-backups/20261022-091451-555-3deaad4d37bc470babfa74d661d5553a
+No matching generated VM state found.
+PASS: 14 reset file-fixture checks. No real VM state used.

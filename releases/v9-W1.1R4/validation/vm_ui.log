@@ -1,0 +1,37 @@
+PASS malformed preferences do not stop UI startup
+PASS denied preferences storage does not stop UI
+PASS invalid saved profile and numbers retain safe defaults
+PASS fractional CPU does not launch
+PASS duplicate start dispatch is blocked while pending
+PASS capture confirmation freezes selected disk
+PASS latest log channel wins out of order responses
+PASS diagnostics never claim completion from a fixed timer
+PASS invalid JSON success is not accepted as launch success
+PASS remote origins never receive session credential
+PASS token removed from address without persisting it
+PASS fragment token authenticates while address is cleaned
+PASS missing token and direct file never send requests
+PASS newest status wins out of order replies
+PASS offline status disables stale stop and launch controls
+PASS malformed status cannot show online
+PASS late image reply never labels a different path
+PASS USB hostile numeric metadata is rejected without HTML injection
+PASS USB name is rendered as text, not HTML
+PASS capture refuses incomplete disk identity
+PASS cancelled confirmation cannot execute later
+PASS repeated confirmation posts reset only once
+PASS setup requires explicit confirmation before elevation request
+PASS empty and out of bounds RAM cannot launch
+PASS valid launch sends typed bounded values and booleans
+PASS request timeout includes a hanging JSON response body
+PASS pagehide aborts requests and clears polls; BFCache restores one pair
+PASS a pre-pagehide response cannot mutate the restored page
+PASS stop rejects a different VM than the confirmation named
+PASS reset refuses a VM that started while confirmation was open
+PASS failed USB rescan clears old selection and capture eligibility
+PASS capture sends exact byte size and unique identity, never display rounding
+PASS stop rejects reused PID with a different process start identity
+PASS stop sends frozen PID and start ticks together
+PASS missing VM start identity disables stop and rejects forced handler
+PASS stop messaging describes a request, not arbitrary process-tree termination
+{"tests":36,"passed":36,"failed":0}
