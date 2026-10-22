@@ -1,5 +1,11 @@
 # Nexus VM Studio
 
+## Start locally: Python and application requirements
+
+Download the full [v9-W1.1R4 package](releases/v9-W1.1R4/) for VM execution. The runtime is **Windows PowerShell plus QEMU, compatible UEFI firmware and a separately supplied guest image**, not Python or PyTorch. The HTML interface alone does not run a VM, and no approved standalone hosted VM trial is supplied.
+
+Use **CPython 3.12** only for the optional supplied Python installer. That installer has no explicit Python-version guard; 3.12 is a recommendation, not a tested universal compatibility range. Python is not the VM runtime. QEMU, firmware and guest images are not bundled. Native Windows startup, guest boot, WHPX acceleration, UAC and USB behavior remain separate qualification steps.
+
 ## Current release licensing
 
 This Nexus release is not offered under Apache License 2.0. Nexus-owned software may be used only for personal, non-commercial purposes. Any other use, including commercial use, modification or redistribution, requires express written consent from the rights holder. Third-party code, models, datasets and separately licensed components retain their own licenses and notices. Previously granted rights and rights that cannot lawfully be restricted remain unchanged.
