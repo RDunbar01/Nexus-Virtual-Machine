@@ -1,0 +1,25 @@
+{
+  "passed": 19,
+  "checks": [
+    "authenticated actual process ping",
+    "unauthenticated API rejected",
+    "wrong token rejected",
+    "wrong method rejected",
+    "cross-origin rejected",
+    "foreign Host rejected",
+    "static UI served without embedding token",
+    "UTF8 image-info byte framing",
+    "array safely rejected",
+    "null safely rejected",
+    "broken JSON safely rejected",
+    "invalid UTF8 rejected",
+    "duplicate framing rejected",
+    "truncated body rejected",
+    "service remains healthy after malformed requests",
+    "fixture unmodified",
+    "owned service shutdown accepted",
+    "owned bridge exits cleanly",
+    "owned receipt removed after shutdown"
+  ],
+  "scope": "actual isolated PowerShell bridge HTTP; no VM/native/device routes"
+}

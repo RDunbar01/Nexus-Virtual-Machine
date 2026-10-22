@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "product_id": "vm",
+  "product": "Nexus Virtual Machine",
+  "version": "v9-W1.1R4",
+  "entrypoint": "NEXUS-VM-Lab.cmd",
+  "launch_kind": "windows",
+  "payload_sha256": "19629bbeb19652ff6cc65e43e05a0ece008ae07f0ad403f567420c6d6e6186d8",
+  "parts": [
+    {
+      "name": "Nexus_vm_Data_001.nxd",
+      "bytes": 93353,
+      "sha256": "19629bbeb19652ff6cc65e43e05a0ece008ae07f0ad403f567420c6d6e6186d8"
+    }
+  ],
+  "files": {
+    ".gitignore": {
+      "bytes": 354,
+      "sha256": "81652ed5a151dba70e99140bcc1a244dd948fe0d306c41e3e7f66f2f6be60e62"
+    },
+    "BRIDGE_FIX_NOTES.md": {
+      "bytes": 1221,
+      "sha256": "e482f26e8f91b5b0a54866c64f3d9868c0cc72df2d2c173e72927755584e0d82"
+    },
+    "Capture-NEXUS-USB.ps1": {
+      "bytes": 6555,
+      "sha256": "d60a52a092f7b424ecb0bbc84db3b09fb6af5a95e237bd26d4e320710f252741"
+    },
+    "DEBUG-BRIDGE.cmd": {
+      "bytes": 149,
+      "sha256": "5ebfb2070bb5ea398b1f83c5e804be1c568a2a93dc4418e9774fa4353cfb56e7"
+    },
+    "DEBUG_CYCLES.md": {
+      "bytes": 4928,
+      "sha256": "ba3d988354ef8ff2bfddb4f92fdb6a01fd721ac0b3213dbd8d6c2807953bbc6f"
+    },
+    "Debug-NEXUS-Bridge.ps1": {
+      "bytes": 551,
+      "sha256": "e9b3f2bb81028ac96bca0015f7b0c57cc1624e95c475b9855b3c7222debba50a"
+    },
+    "LICENSE": {
+      "bytes": 1976,
+      "sha256": "210fd883eae59321c3760e1dad92120e9d3cd90bb22f048a2698f6be3dfcae8f"
+    },
+    "NEXUS-VM-Bridge.ps1": {
+      "bytes": 25864,
+      "sha256": "3ab8b963ce8af726860628b0149958116960279e44914fe3baa24239b7e047ea"
+    },
+    "NEXUS-VM-Lab.cmd": {
+      "bytes": 362,
+      "sha256": "e8aed98d002cdff1d2eb1b08e3aff4e44919e7b20d3f788c5828e9f8dfa52e88"
+    },
+    "NEXUS-VM-Lab.html": {
+      "bytes": 40840,
+      "sha256": "f410141b72cc1cc6e7a5f45e5c650b84f5527b2088e9e90f4452846fc7203b99"
+    },
+    "NEXUS-VM-Lab.ps1": {
+      "bytes": 14767,
+      "sha256": "083f66ff001b49cc5ecaa01a02ac7ef4d3f2d7a0ee8176be026c5a937fe27650"
+    },
+    "NEXUS-VM-Launcher.ps1": {
+      "bytes": 5846,
+      "sha256": "d022c52b331f8250d063113ad6853971c9c075e915353fd8afd27005dc4e6af0"
+    },
+    "NEXUS-VM-Safety.ps1": {
+      "bytes": 4379,
+      "sha256": "eb20deafe5afd74bcd0dee5a4404c41b76053286e1873652cf3667d335d41ede"
+    },
+    "NEXUS_LICENSE_SCOPE.md": {
+      "bytes": 1615,
+      "sha256": "7a12f890aea5c22c88ae66d986b01e789a20ff7aad9cf6580958c007ff1b3eae"
+    },
+    "OPEN-LEGACY-POWERSHELL-GUI.cmd": {
+      "bytes": 126,
+      "sha256": "0a682d70ccf7f3c22db86820c366ed5ff46359c07a9ce19becef4394cbefe71c"
+    },
+    "PRODUCT_RELEASE.json": {
+      "bytes": 629,
+      "sha256": "7505664ae68639df397449d3c299557aab3c59ddc4449980183826450c35342f"
+    },
+    "Preflight-NEXUS-VM.ps1": {
+      "bytes": 6073,
+      "sha256": "87e0715e7734f24242452e60664610f6cf940d636539ae86721510491c976eda"
+    },
+    "README.md": {
+      "bytes": 14890,
+      "sha256": "f3a8f20e40de3a8bc743875ba2331f2041ec9adb25ffccbb5426a29744fa3612"
+    },
+    "RELEASE_SOURCE_SHA256.json": {
+      "bytes": 4993,
+      "sha256": "5a0f3ff955d6e59519b3a1d350ed9dbf3246adf23cbc01ec984a0df3eac3533d"
+    },
+    "RELEASE_VALIDATION.json": {
+      "bytes": 1057,
+      "sha256": "be26983248273c839ee6198dfa23bfc90ebefa051246dd2ca4f7767b9b73a33b"
+    },
+    "RUN-DIAGNOSTICS.cmd": {
+      "bytes": 200,
+      "sha256": "5f07e8d23c92bb323017b8051173d1ae4c0113d069add91c02fcd2c55ee80960"
+    },
+    "Reset-NEXUS-VM.ps1": {
+      "bytes": 1485,
+      "sha256": "101a70f69833ea3dfd8fd7d5b4c76a7b5d8ba849fc1b3dae4017c337acb314c0"
+    },
+    "STARTUP.NSH": {
+      "bytes": 158,
+      "sha256": "a9dd626a5796775abcfb846ad6a24aefbcdda154bfbf1ef6369e1b76aaa75918"
+    },
+    "Select-NEXUS-Image.ps1": {
+      "bytes": 1698,
+      "sha256": "b45459b869e339f82821b5ff646de9fc98594be343937010fb8848811058bc5f"
+    },
+    "Setup-NEXUS-VM.ps1": {
+      "bytes": 4836,
+      "sha256": "7b3208923c3eb655deb54a4f618d010f3777d215b279d92ae32951abd89c48ce"
+    },
+    "Start-NEXUS-VM.ps1": {
+      "bytes": 19684,
+      "sha256": "874481a3cf964001ad1ab2342f35a3557fe668e62891841237937ce563b57eda"
+    },
+    "TEST_RESULTS.json": {
+      "bytes": 1916,
+      "sha256": "609b59bb9d6c18af805cafc7b8872e5dfd0ffa7549b50b2e9a6c615f70a3659e"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 6193,
+      "sha256": "c9f72fc60a25676c6e57ac7b0df803f8ed17bd7627c41c32e56063eeb072687c"
+    },
+    "VMBOOT1_VERSION.txt": {
+      "bytes": 315,
+      "sha256": "d8f9b983772ff7edff8cb86bf0ec5f5de6362bff089db6716e28b42951de2778"
+    },
+    "VM_TEST_MATRIX.md": {
+      "bytes": 2798,
+      "sha256": "961eb51cf544df850a81ffe50f7311ecb5b3308cde3e260cd1c1bb8d1e26561c"
+    },
+    "qualification/UI_REVIEW.md": {
+      "bytes": 3804,
+      "sha256": "cc520d48ae3fa38635fb2a38f9aa076aba9bc4bff79503ffeb03a04cde7cfad7"
+    },
+    "qualification/backend/REVIEW.md": {
+      "bytes": 5465,
+      "sha256": "995bf7e4fddeadeb44335829f886edfb44fb3da6cab2fa4e5c5b024190ee79cd"
+    },
+    "qualification/backend/helpers-result.txt": {
+      "bytes": 460,
+      "sha256": "a29909b4557bc1e87bfd5e1983a596b1d06561720f3800c4dc46a162ebf31cc3"
+    },
+    "qualification/backend/http-result.txt": {
+      "bytes": 943,
+      "sha256": "923c18f5641df2ed08e786b7622e29bc25cd64a7f0232449302f81e9d6950d31"
+    },
+    "qualification/next_release/local_installer.log": {
+      "bytes": 1015,
+      "sha256": "1496fbc6c511af81322e51ea1981703212093e030d0d506600129d2a66b56f8d"
+    },
+    "qualification/next_release/vm_helpers.log": {
+      "bytes": 460,
+      "sha256": "a29909b4557bc1e87bfd5e1983a596b1d06561720f3800c4dc46a162ebf31cc3"
+    },
+    "qualification/next_release/vm_http_retry.log": {
+      "bytes": 779,
+      "sha256": "80be2dc906fd12102f0dd456c71ecf9e454919dc8d006a7863f0b6be8b4c8430"
+    },
+    "qualification/next_release/vm_license_ui.log": {
+      "bytes": 2093,
+      "sha256": "e108e549b46589078d5f010f19d33bde4edc5d3ffc18c46ba717e025c3616ab4"
+    },
+    "qualification/next_release/vm_more.log": {
+      "bytes": 1704,
+      "sha256": "9a7b65005151839cebf813cd97b7c38d4a72b6e88c69a76d18e91b5fe8a81212"
+    },
+    "qualification/next_release/vm_parse.log": {
+      "bytes": 34,
+      "sha256": "6a8d1ee108534cc20821b6e3f362770cb0cc2bf5c55a22621357b74e61a147cd"
+    },
+    "qualification/next_release/vm_ui.log": {
+      "bytes": 2093,
+      "sha256": "e108e549b46589078d5f010f19d33bde4edc5d3ffc18c46ba717e025c3616ab4"
+    },
+    "tests/README.md": {
+      "bytes": 1531,
+      "sha256": "de0b3f5cbe4225ad383253d3b349fb3874b8bcb106ae89ea2f1e30f211202e38"
+    },
+    "tests/README_UI_TESTS.txt": {
+      "bytes": 1531,
+      "sha256": "a45bf292500836dc7f27199bb1d048f9fc3c858c872945e33667503b86cf4e8a"
+    },
+    "tests/Test-CaptureValidation.ps1": {
+      "bytes": 1523,
+      "sha256": "b0f6a55b65904ccf90509765afc2e57ef05e572b05523251b73994e49af60125"
+    },
+    "tests/Test-Launcher.ps1": {
+      "bytes": 1431,
+      "sha256": "814196f561f2f66b6de78102383ce9ed15a3b83edbf7185d32c447a0e67be419"
+    },
+    "tests/Test-Parse.ps1": {
+      "bytes": 589,
+      "sha256": "573385f7d88e5b7b7e388bd6ef98e5d48efc41dd74a16f99c78f1382bf0d9773"
+    },
+    "tests/Test-Reset.ps1": {
+      "bytes": 2260,
+      "sha256": "286c02d519d2243261343084eef7e32427bf80fa7d9d9375a132ceeba2ecce68"
+    },
+    "tests/package.json": {
+      "bytes": 312,
+      "sha256": "9f168e93f35bb3f911d002b03d3e638db5de762bae82e68aba7859a7b7685c02"
+    },
+    "tests/test_backend_helpers.ps1": {
+      "bytes": 6348,
+      "sha256": "8cc28219c2d89e455adc67f72c7d28f10e27eb465083a98bdd7823148386b651"
+    },
+    "tests/test_bridge_loopback.py": {
+      "bytes": 4938,
+      "sha256": "61616d63fa26bca0bf0006a34b7b137bdf0b06fe7cce5ddcf07ab9c38676e1ee"
+    },
+    "tests/test_independent_http.py": {
+      "bytes": 5197,
+      "sha256": "c5f697fc97cb2343b94857e452b1f69ff20f8ade753f59d68b97a1f7e20a024a"
+    },
+    "tests/vm_ui_regressions.cjs": {
+      "bytes": 16995,
+      "sha256": "110b3d6a2d3905ea83c96ed2f8c105dd4924d336f5c8a556fb12ff1fa70857fd"
+    }
+  }
+}

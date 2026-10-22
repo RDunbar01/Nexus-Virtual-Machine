@@ -1,0 +1,20 @@
+{
+  "status": "PASS within available scope",
+  "product_version": "v9-W1.1R4",
+  "tests": {
+    "powershell_parse_files": 16,
+    "backend_checks": 40,
+    "capture_validation_checks": 19,
+    "launcher_checks": 7,
+    "reset_fixture_checks": 14,
+    "isolated_http_checks": 19,
+    "ui_checks": 36,
+    "local_installer_tests": 9
+  },
+  "limits": [
+    "Initial HTTP 20-second readiness timeout passed unchanged on retry; initial parser environment needed writable XDG_CACHE_HOME.",
+    "No QEMU boot, Windows Forms/UAC/WHPX, real VM state or physical disks."
+  ],
+  "hardware_qualified": false,
+  "full_debug_guarantee": false
+}

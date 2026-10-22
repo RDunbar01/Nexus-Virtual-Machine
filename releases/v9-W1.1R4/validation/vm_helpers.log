@@ -1,0 +1,7 @@
+PASS: 24 backend helper checks; parser + pure functions only. No Windows/QEMU boot qualification.
+PASS: 30 total helper and source invariant checks.
+PASS: 32 total checks including receipt serialization.
+PASS: 37 total checks including stale stop target mocks.
+WARNING: The owned QEMU process could not be stopped yet. State remains locked until it exits.
+PASS: 39 total checks including exceptional owned-process cleanup.
+PASS: 40 total final backend checks.
