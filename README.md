@@ -1,38 +1,44 @@
 # Nexus VM Studio
 
-## Start locally: Python and application requirements
+A Windows HTML and PowerShell control interface for testing Nexus OS with QEMU. Version **v9-W1.1R4 / VMBOOT1** brings guest launch, storage overlays and diagnostics into one local development workflow.
 
-Download the full [v9-W1.1R4 package](releases/v9-W1.1R4/) for VM execution. The runtime is **Windows PowerShell plus QEMU, compatible UEFI firmware and a separately supplied guest image**, not Python or PyTorch. The HTML interface alone does not run a VM, and no approved standalone hosted VM trial is supplied.
+[Download v9-W1.1R4](releases/v9-W1.1R4/) · [Installation instructions](releases/v9-W1.1R4/INSTALL.txt) · [Validation record](releases/v9-W1.1R4/RELEASE_VALIDATION.json)
 
-Use **CPython 3.12** only for the optional supplied Python installer. That installer has no explicit Python-version guard; 3.12 is a recommendation, not a tested universal compatibility range. Python is not the VM runtime. QEMU, firmware and guest images are not bundled. Native Windows startup, guest boot, WHPX acceleration, UAC and USB behavior remain separate qualification steps.
+## What it does
 
-## Current release licensing
+- Launch compatible `.img`, `.raw`, `.bin` and `.iso` guest images through QEMU and UEFI firmware.
+- Keep ordinary guest writes in QCOW2 overlays rather than writing directly to the original raw image.
+- Configure guest memory, virtual CPUs, WHPX or TCG acceleration, and QEMU user-mode NAT with virtual e1000 Ethernet.
+- Show preflight checks, bridge health, serial output and host/QEMU logs alongside the guest controls.
+- Archive generated overlays during reset and preserve image-scoped firmware state separately from the source image.
 
-This Nexus release is not offered under Apache License 2.0. Nexus-owned software may be used only for personal, non-commercial purposes. Any other use, including commercial use, modification or redistribution, requires express written consent from the rights holder. Third-party code, models, datasets and separately licensed components retain their own licenses and notices. Previously granted rights and rights that cannot lawfully be restricted remain unchanged.
+## Engineering contribution
 
+Developed by **Rich Dunbar / Nexus Emerging Technology with AI-assisted coding** to shorten the Nexus OS kernel and GUI debugging cycle between physical boots. The Nexus work is the interface, token-gated loopback bridge, QEMU configuration, image-state handling and diagnostic automation.
 
-> The reviewed v9-W1.1R4 source, installer and data components are published on the main branch. Windows/hardware acceptance remains pending; publication is not hardware certification.
+**QEMU provides emulation; TianoCore EDK II/OVMF provides UEFI firmware.** Nexus VM Studio is not a new hypervisor. Virtual Ethernet is not the host's physical Wi-Fi device, and virtual-machine tests do not establish Radeon, NVMe, USB or other physical-device compatibility.
 
-**v9-W1.1R4 · published source and installer components · experimental software**
+## Start locally
 
-A local HTML and PowerShell control interface for QEMU, not a new hypervisor.
+1. Download every file in [releases/v9-W1.1R4](releases/v9-W1.1R4/). Keep `Nexus_vm_Data_001.nxd`, `package_manifest.json` and `installer.py` together.
+2. The optional installer uses **CPython 3.12**. Run `python installer.py --no-launch`, review the local installation plan and extract into a new directory. Python 3.12 is recommended, not a qualified universal version range.
+3. On Windows, install or locate QEMU with `qemu-system-x86_64.exe`, `qemu-img.exe` and compatible OVMF/EDK II firmware. Supply your own compatible guest image. **QEMU, firmware and guest images are not bundled.**
+4. Run **`NEXUS-VM-Lab.cmd`**, wait for **Bridge Online**, then select the guest image. Start with the Compat profile and settings appropriate to your host. QEMU opens the guest display in its own window.
 
-## Current baseline and release status
+Do not open `NEXUS-VM-Lab.html` directly to run a VM. It is a control panel for the local PowerShell bridge, not a standalone browser emulator. There is no hosted VM trial. Neither Python nor PyTorch is the VM runtime.
 
-Previous baseline: **v9 · W1.1R3 / VMBOOT1**. Published package: **v9 · W1.1R4 / VMBOOT1**. Use the matching application, installer and package metadata together.
+The launcher uses Windows PowerShell with process-scoped `-ExecutionPolicy Bypass`; review scripts before running them. QEMU setup, administrator-only USB capture and hypervisor configuration are separate host actions. Installer data parts are at most 10,000,000 bytes; individual distributed files remain below 20,000,000 bytes.
 
-QEMU provides emulation and TianoCore EDK II/OVMF provides UEFI firmware. Guest OS images, QEMU and firmware are not bundled. Safe regression and PowerShell parsing checks do not establish successful Windows guest boot, WHPX acceleration, UAC, Forms or USB operation.
+## Validation and safety
 
-## Start and inspect the original project
+Safe regression tests and PowerShell parsing cover controller logic, request handling, browser state and temporary-file preservation. They do not establish native Windows startup, guest boot, WHPX, UAC, Windows Forms or physical USB behavior.
 
-Use the exact launch instructions accompanying the matching release package. The [preserved previous README](docs/README_PREVIOUS.md) contains the original workflow, research citations, credits, downloads and limitations. Treat its release-specific statements as historical; historical software and its original licenses remain preserved.
+Back up existing `state/`, `images/` and `logs/` before updating. Stop the owned VM before resetting state. Reset archives generated overlays under `state/reset-backups/`; older overlays are not automatically migrated to new image keys. Logs and state may contain paths, guest data and session tokens, so keep them private.
 
-## Evidence and licensing
+See the extracted test records and [historical README](docs/README_PREVIOUS.md) for detailed workflow context. Historical reset behavior does not override the current archive-before-reset implementation.
 
-Developed by Rich Dunbar / Nexus Emerging Technology with AI-assisted coding. Retain existing licenses, attribution and third-party notices. No additional Windows, physical GPU, device-write or model-quality qualification is claimed by this documentation refresh. No live browser-trial deployment is created by this README.
+## Credits and license
 
-## v9-W1.1R4 installation files
+Credit Fabrice Bellard and QEMU contributors, TianoCore contributors, and Microsoft WinGet contributors. PowerShell, Windows Forms and WHPX are Microsoft platform components. See the [third-party notices](NEXUS_VM_Studio_THIRD_PARTY_NOTICES.md).
 
-[Installation instructions](releases/v9-W1.1R4/INSTALL.txt) · [Python installer](releases/v9-W1.1R4/installer.py) · [Package directory](releases/v9-W1.1R4) · [Validation record](releases/v9-W1.1R4/RELEASE_VALIDATION.json).
-
-Download the entire version directory together, not the installer alone. Keep its manifest and data file alongside installer.py. Every distributed component is at most 10,000,000 bytes. The complete licensing-corrected package has passed independent package review and isolated no-launch extraction; Windows/hardware acceptance remains pending. Publication of these components does not imply hardware certification.
+Personal use and internal commercial testing and evaluation are permitted for Nexus-owned material. Distribution, modification, production deployment and other commercial use require express written consent. Third-party licenses and previously granted rights remain unchanged. See the [license](LICENSE) and [evaluation permission](COMMERCIAL_EVALUATION_PERMISSION.md).
